@@ -1,0 +1,21 @@
+Declare
+f1 int := 1;
+f2 int := 1;
+f3 int;
+n int :=&number;
+i int;
+Begin
+
+dbms_output.put_line(''||f1);
+dbms_output.put_line(''||f2);
+for i in 1..n loop
+f3 := f1+f2;
+f1 := f2;
+f2 := f3;
+If f3 > n then
+exit;
+end If;
+dbms_output.put_line(''||f3);
+end loop;
+end;
+/

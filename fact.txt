@@ -1,0 +1,12 @@
+declare 
+f int := 1;
+n int := &number;
+Begin
+loop
+f := f*n;
+n := n-1;
+exit when n<=0;
+end loop;
+dbms_output.put_line('Factorial is '||f);
+end;
+/ 

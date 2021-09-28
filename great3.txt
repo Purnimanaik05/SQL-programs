@@ -1,0 +1,17 @@
+Declare 
+a int :=&number;
+b int :=&number;
+c int :=&number;
+
+Begin 
+If (a > b and a>c) Then 
+dbms_output.put_line('a is greater');
+Else
+If (b>c) Then
+dbms_output.put_line('b is greater');
+Else
+dbms_output.put_line('c is greater');
+end If;
+end If;
+end;
+/

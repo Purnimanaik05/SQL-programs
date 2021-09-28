@@ -1,0 +1,11 @@
+declare
+a int :=&number;
+b int :=&number;
+Begin 
+If (a > b ) Then 
+dbms_output.put_line('a is greater');
+Else
+dbms_output.put_line('b is greater');
+end If;
+end;
+/

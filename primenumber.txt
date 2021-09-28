@@ -1,0 +1,31 @@
+declare
+    
+n number;              
+i number;             
+temp number;         
+    
+begin
+    
+n := 100;                  
+    
+i := 2;  
+   
+temp := 1;  
+for n in 1 .. 100 loop
+  for i in 2..n/2 
+    loop 
+        if mod(n, i) = 0 
+        then
+            temp := 0; 
+            exit; 
+        end if; 
+    end loop; 
+if temp := 1 
+then 
+	dbms_output.put_line(n);
+end if;
+end loop;
+   
+end;           
+  
+/
